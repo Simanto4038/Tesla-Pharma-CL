@@ -1,0 +1,69 @@
+.aboutOne
+{
+    background-image: url('./banner105.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+}
+.abouttwo
+{
+    background-image: url('./banner106.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+}
+.aboutthree
+{
+    background-image: url('./banner107.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+}
+.aboutOneText
+{
+    padding: 10px;
+   
+    background-color: rgba(5, 17, 44, 0.514);
+}
+/* .aboutTwo
+{
+    background-image: url('../../images/About101.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+} */
+.abouttwoText
+{
+    padding: 10px;
+    color:white;
+    background-color: rgba(0, 20, 66, 0.658);
+    z-index: 1;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .aboutOneText h1
+{
+   
+    font-size:16px;
+  
+}
+    .aboutOneText p
+{
+   
+    font-size:14px;
+  
+}
+.abouttwoText h1
+{
+   
+    font-size:14px;
+  
+}
+    .abouttwoText p
+{
+   
+    font-size:11px;
+  
+}
+  }

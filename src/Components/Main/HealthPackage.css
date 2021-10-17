@@ -1,0 +1,29 @@
+.icon-color
+{
+    font-size: 65px;
+    color: rgb(128, 125, 125);
+}
+
+.box
+{
+     background-color: white;
+}
+.box:hover
+{
+     box-shadow: 3px 4px 15px 3px rgb(177, 173, 177) ;
+     color: rgba(221, 217, 220, 0.685);
+}
+.box:hover .icon-color
+{
+    font-size: 65px;
+    color: crimson;
+}
+
+.love-color
+{
+    color: crimson;
+}
+.love-color:hover
+{
+    color: white;
+}

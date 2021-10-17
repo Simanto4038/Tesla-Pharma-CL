@@ -1,0 +1,41 @@
+[
+    {
+      "key": "HC101",
+      "name": "Age Under 40",
+      "Focus": "Understand your health in detail with our Her Health Check - Age Under 40",
+      "image": "../images/103.jpg",
+      "Diaganosis": ["Complete Blood Count + ESR",
+             "Glucose -Fasting",
+             "Hemoglobin-A1c",
+             "Lipid Profile",
+            "Liver Function Test",
+          "Urine Routine Microscopic Examination Plus",
+        "ECG","Echocardiogram (2D mode)","X-Ray – Chest PA"],
+       
+      "Available Package 1": "6 Months",
+      "Available Package 2": "1 Year",
+      "Price": "Price Starts From 2500/yr "
+
+ 
+    },
+    {
+      "key":"Hs102",
+      "name": "Age 40 - 65",
+      "Focus": "Feel good at every stage of life with our Her Health Check - Age 40 to 65",
+      "image": "../images/103.jpg",
+     
+      "Available Package 1": "6 Months",
+      "Available Package 2": "1 Year",
+      "Price": "Price Starts From 3500/yr "
+    },
+    {
+      "key": "Hs103",
+      "name": "Age over 65",
+      "Focus": "The His Health Check - Age over 65 is focused on older men and their specific healthcare needs",
+      "image": "../images/103.jpg",
+     
+      "Available Package 1": "6 Months",
+      "Available Package 2": "1 Year",
+      "Price": "Price Starts From 4500/yr "
+    }
+  ]

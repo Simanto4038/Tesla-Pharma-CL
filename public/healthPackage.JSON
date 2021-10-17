@@ -1,0 +1,29 @@
+[
+    {
+      "key": "HP101",
+      "name": "For Men",
+      "image": "../images/hc103 .png",
+     
+      "Available": "Age 1-40,Age 40-65,Age 65+",
+      "Price": "Price Starts From 2500/yr "
+
+ 
+    },
+    {
+      "key":"HP102",
+      "name": "For Women",
+      "image": "../images/hc104.png",
+     
+    
+      "Available": "Age 1-40,Age 40-65,Age 65+",
+      "Price": "Price Starts From 2500/yr "
+    },
+    {
+      "key": "HP103",
+      "name": "Special Health Check",
+      "image": "../images/hc105.png",
+     
+      "Available": "For All",
+      "Price": "Price Starts From 1000/yr "
+    }
+  ]

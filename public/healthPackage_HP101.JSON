@@ -1,0 +1,34 @@
+[
+    {
+      "key": "HPM101",
+      "name": "Age Under 40",
+      "Focus": "Focused on younger men, our His Health Check - Age Under 40",
+      "image": "../images/103.jpg",
+     
+      "Available1": "6 Months",
+      "Available2": "1 Year",
+      "Price": "Price Starts From 2500/yr "
+
+ 
+    },
+    {
+      "key":"HPM102",
+      "name": "Age 40 - 65",
+      "Focus": "Feel good at every stage of life with our  His Health Check - Age 40 to 65",
+      "image": "../images/103.jpg",
+     
+      "Available1": "6 Months",
+      "Available2": "1 Year",
+      "Price": "Price Starts From 3500/yr "
+    },
+    {
+      "key": "HPM103",
+      "name": "Age over 65",
+      "Focus": "The His Health Check - Age over 65 is focused on older men and their specific healthcare needs",
+      "image": "../images/103.jpg",
+     
+      "Available1": "6 Months",
+      "Available2": "1 Year",
+      "Price": "Price Starts From 4500/yr "
+    }
+  ]

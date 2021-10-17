@@ -1,0 +1,38 @@
+[
+    {
+      "key": "Hs101",
+      "name": "IMAGING",
+      "image": "../images/103.jpg",
+     
+      "Test": "MRI,ECG,CT SCAN,X-RAY",
+      "Open": "EVERYDAY 7 AM to 10 PM "
+
+ 
+    },
+    {
+      "key":"Hs102",
+      "name": "PATHOLOGY",
+      "image": "../images/104.jpg",
+     
+      "Test": "BLOOD,URINE,STOOL",
+      "Open": "EVERYDAY 7 AM to 10 PM "
+    },
+    {
+      "key": "Hs103",
+      "name": "AMBULANCE",
+      "image": "../images/102.jpg",
+     
+      "Test": "TOTAL 14 FULLY FACILATED AMBULANCE AT YOUR SERVICE",
+      "Open": "ALL DAY 24/7 "
+     
+    },
+    {
+      "key": "Hs103",
+      "name": "Madicine and Medicare",
+      "image": "../images/101.jpg",
+     
+      "Test": "All Types of Medicine and Skin Care Products",
+      "Open": "ALL DAY 24/7 "
+     
+    }
+  ]
