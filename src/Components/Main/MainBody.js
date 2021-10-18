@@ -2,6 +2,9 @@ import React from 'react';
 import Banner from './Banner';
 import HealthPackage from './HealthPackage';
 import MainService from './MainService';
+import OurTeam from './OurTeam';
+import TopClints from './TopClints';
+
 
 const MainBody = () => {
     return (
@@ -9,6 +12,8 @@ const MainBody = () => {
             <Banner/>
             <MainService/>
             <HealthPackage/>
+            <OurTeam/>
+            <TopClints/>
         </div>
     );
 };

@@ -3,7 +3,14 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Card } from 'react-bootstrap';
-import './Banner.css'
+import './Banner.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+  offset: 200,
+  duration: 700
+});
+
 const MainService = () => {
 
   const[services,setServices]=useState([])
@@ -33,11 +40,11 @@ const MainService = () => {
 
 const Service = (props)=>
 {  
-  const {name,image,Test,Open}= props.service;
+  const {name,image,Test,Open,slide}= props.service;
   return (
     <>
    
-    <div className='serviceBox' style={{height:'220px',backgroundImage:`url(${image})`,backgroundSize:'cover',overflow:'hidden'}}>
+    <div className='serviceBox'data-aos={"fade-left"}  style={{height:'220px',backgroundImage:`url(${image})`,backgroundSize:'cover',overflow:'hidden'}}>
 
     
     <div className='p-3 serviceHeading my-auto text-white' 

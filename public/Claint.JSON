@@ -1,0 +1,44 @@
+[
+    {
+      "key": "C101",
+      "name": "WHO",
+      "image": "../images/C101.png"
+    },
+    {
+      "key":"C102",
+      "name": "The World Bank",
+      "image": "../images/C102.png"
+    },
+    {
+      "key": "C103",
+      "name": "Unilever",
+      "image": "../images/C103.png"
+     
+     
+    },
+    {
+      "key": "C104",
+      "name": "SAMGSUNG",
+      "image": "../images/C104.png"
+    },
+    {
+      "key": "C105",
+      "name": "Robi",
+      "image": "../images/C105.png"
+    },
+    {
+      "key": "C107",
+      "name": "COCACOLA",
+      "image": "../images/C107.png"
+    },
+    {
+      "key": "C108",
+      "name": "BCB",
+      "image": "../images/C108.png"
+    },
+    {
+      "key": "C106",
+      "name": "GP",
+      "image": "../images/C106.png"
+    }
+  ]

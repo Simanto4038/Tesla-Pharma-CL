@@ -1,0 +1,52 @@
+[
+    {
+      "key": "T101",
+      "name": "Sylvana Quader Sinha",
+      "image": "../images/T101.jpg",
+     
+      "post": "Founder, Chair, & CEO",
+      "Age": "34 y/o "
+
+ 
+    },
+    {
+      "key":"T102",
+      "name": "Dr. Simeen Majid Akhtar",
+      "image": "../images/T102.jpg",
+     
+      "post": "Chief Medical Officer",
+      "Age": "54 y/o "
+    },
+    {
+      "key": "T103",
+      "name": "Keith de Alwis",
+      "image": "../images/T103.jpg",
+     
+      "post": "Chief Technology & Product Officer",
+      "Age": "32 y/o "
+    },
+    {
+      "key": "T105",
+      "name": "Dr. Zaheed Husain, Ph.D.",
+      "image": "../images/T105.jpg",
+     
+      "post": "Senior Lab Director, Cancer Diagnostics",
+      "Age": "56 y/o "
+    },
+    {
+      "key": "T104",
+      "name": "Kat Wendelstadt",
+      "image": "../images/T104.jpg",
+     
+      "post": "Chief Growth Officer",
+      "Age": "34 y/o "
+    },
+    {
+      "key": "T106",
+      "name": "Kat Wendelstadt",
+      "image": "../images/T106.jpg",
+     
+      "post": "Chief Growth Officer",
+      "Age": "34 y/o "
+    }
+  ]

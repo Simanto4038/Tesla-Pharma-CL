@@ -10,7 +10,7 @@ const HealthPackage = () => {
         const URL='./healthPackage.JSON'
         fetch(URL).then(res => res.json()).then(data => setPackages(data))
     },[])
-    console.log(packages);
+    //console.log(packages);
     return (
         <>
         <div className='h1 text-center mt-5'>Health Checkup & Consultency Packages</div>

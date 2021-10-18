@@ -1,6 +1,7 @@
 [
     {
       "key": "Hs101",
+      "slide":"slide-left",
       "name": "IMAGING",
       "image": "../images/103.jpg",
      
@@ -11,6 +12,7 @@
     },
     {
       "key":"Hs102",
+      "slide":"slide-right",
       "name": "PATHOLOGY",
       "image": "../images/104.jpg",
      
@@ -19,6 +21,7 @@
     },
     {
       "key": "Hs103",
+      "slide":"slide-left",
       "name": "AMBULANCE",
       "image": "../images/102.jpg",
      
@@ -27,12 +30,34 @@
      
     },
     {
-      "key": "Hs103",
+      "key": "Hs104",
+      "slide":"slide-right",
       "name": "Madicine and Medicare",
       "image": "../images/101.jpg",
      
       "Test": "All Types of Medicine and Skin Care Products",
       "Open": "ALL DAY 24/7 "
      
+    },
+    {
+      "key": "Hs105",
+      "slide":"slide-left",
+      "name": "Old Age Care Center",
+      "image": "../images/105.jpg",
+     
+      "Test": "Various Types Of Tests And consultency, Housing and standred food is at a very affortable cost",
+      "Open": "ALL DAY 24/7 "
+     
+    },
+    {
+      "key": "Hs106",
+      "slide":"slide-right",
+      "name": "COVID-19 Medicare & ICU ",
+      "image": "../images/106.jpg",
+     
+      "Test": "All Types of Medicare & ICU facility ",
+      "Open": "ALL DAY 24/7 "
+     
     }
+    
   ]
