@@ -21,34 +21,14 @@ const UseFirebase = ()=>
     
 /** Google Sign In **/
 
-const SignInWithGoogle =()=>
+const GoogleSignInHandler = ()=>
 {
-  console.log('google');
-  signInWithPopup(auth, Googleprovider)
-.then((result) => {
+  console.log('GOOGLE SIGN IN');
+   return signInWithPopup(auth, Googleprovider)
   
-  // The signed-in user info.
-  const {displayName,email,photoURL} = result.user;
-  const loggedinUserInfo={
-    name:displayName,
-    email:email,
-    photo:photoURL
-  }
-
-  // setUser(loggedinUserInfo);
-  setUser( loggedinUserInfo );
-  console.log(user);
-  // ...
-}).catch((error) => {
-  // Handle Errors here.
-  const errorCode = error.code;
-  
- 
-  console.log(errorCode);
-  setError(errorCode);
-  // ...
-});
 }
+
+
      
 
 
@@ -127,7 +107,7 @@ const SignoutHandler = ()=>
            setError,
            setEmail,
            setPassWord,
-           SignInWithGoogle,
+           GoogleSignInHandler
             }
 }
 

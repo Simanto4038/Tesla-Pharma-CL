@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
 import { Container, Image, Nav, Navbar, Offcanvas, Button, ListGroup, Card} from 'react-bootstrap';
-import {  NavLink } from 'react-router-dom';
+import {  NavLink,useHistory} from 'react-router-dom';
 import './Navbar.css'
 import logo101 from './logo.png'
 import profile from './profile.png'
 import Uppernav from './Uppernav';
-import UseFirebase from '../../Hooks/UseFirebase';
+// import UseFirebase from '../../Hooks/UseFirebase';
+import useAuth from '../../Hooks/useAuth';
 
 
 const Navigationbar = () => {
   const [show, setShow] = useState(false);
-  const {user ,SignoutHandler} = UseFirebase()
-  
+  const {user ,SignoutHandler} = useAuth()
+  const history = useHistory();
  
   // products to be rendered on the UI
  // console.log(user);
+
   const {displayName,email,photoURL} = user;
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -78,7 +80,7 @@ const Navigationbar = () => {
     <NavLink  className='link' style={{fontWeight: "bold", fontSize:'20px',color:"gray"}}
     activeStyle={{fontSize:'20px', fontWeight: "bold",color: "crimson"}} to="/services">Our Services</NavLink >
     <NavLink  className='link' style={{fontWeight: "bold", fontSize:'20px',color:"gray"}}
-    activeStyle={{fontSize:'20px', fontWeight: "bold",color: "crimson"}} to="/ProfileDetail">Profile Detail</NavLink >
+    activeStyle={{fontSize:'20px', fontWeight: "bold",color: "crimson"}}  to="/ProfileDetail">Profile Detail</NavLink >
     
    
     </Nav>

@@ -2,8 +2,8 @@ import React from 'react';
 import googlelogo from './google.png'
 
 import { Form , Button,Card, ListGroup, ListGroupItem, Navbar } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
-// import { getAuth, signInWithPopup,signInWithEmailAndPassword ,FacebookAuthProvider,signOut ,sendPasswordResetEmail  } from "firebase/auth";
+import { NavLink,useLocation,useHistory } from 'react-router-dom';
+//import { getAuth, signInWithPopup,signInWithEmailAndPassword ,FacebookAuthProvider,signOut ,sendPasswordResetEmail  } from "firebase/auth";
 
 
 import './logSign.css'
@@ -17,15 +17,50 @@ const Login = () => {
   // const [password,setPassWord]=useState('')
  
 const {user,
-       SignInWithGoogle,
+      GoogleSignInHandler,
        error,
       SignoutHandler,
       setEmail,
+      setError,
+      setUser,
       setPassWord,
       SigninWithEmail}=UseFirebase()
 
 
-  console.log(user);
+  //console.log(user);
+
+
+
+  const location = useLocation()
+  //console.log(location.state?.from);
+  const redirect_URL = location.state?.from || '/home'
+  const history = useHistory()
+
+  const HandleGoogleLogIn = ()=>
+  { 
+    GoogleSignInHandler().then((result) => {
+  
+      const {displayName,email,photoURL} = result.user;
+      const loggedinUserInfo={
+        name:displayName,
+        email:email,
+        photo:photoURL
+      }
+  
+      setUser(loggedinUserInfo);
+      history.push(redirect_URL)
+    }).catch((error) => {
+      // Handle Errors here.
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      
+      setError(errorCode);
+      // ...
+    });
+  }
+
+
+
  
  const handleEmailchange =(e)=>
  {
@@ -66,7 +101,7 @@ const {user,
 
    <br />
    <p className='h5'>OR LOG IN WITH</p>
-  <Button type="submit" onClick={SignInWithGoogle} className='btn btn-dark' >LOG IN WITH <img src={googlelogo} style={{height:'20px',width:'20px'}} alt="" /></Button>
+  <Button type="submit" onClick={HandleGoogleLogIn} className='btn btn-dark' >LOG IN WITH <img src={googlelogo} style={{height:'20px',width:'20px'}} alt="" /></Button>
   
     
   <br />

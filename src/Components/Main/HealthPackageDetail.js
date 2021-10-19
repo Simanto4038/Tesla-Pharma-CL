@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { NavLink } from 'react-router-dom';
-import Services from '../Services/Services';
+
 import banner101 from './phygio101.jpg'
 import banner102 from './diaganostic104.jpg'
 import banner103 from './diaganostic105.jpg'
@@ -9,14 +9,14 @@ import './HealthPackage.css'
 const HealthPackageDetail = () => {
     const [helthPackages,setHelthpackages]=useState([])
     const{healthID}=useParams();
-    console.log(healthID);
+    //console.log(healthID);
     useEffect(()=>
     {
         const URL = `../../healthPackage_${healthID}.JSON`
-        console.log(URL);
+        //console.log(URL);
         fetch(URL).then(res => res.json()).then(data => setHelthpackages(data))
     },[]);
-    console.log(helthPackages);
+    //console.log(helthPackages);
     return (
       <>  
       <div className="container mx-auto row g-0">
@@ -42,7 +42,7 @@ const HealthPackageDetail = () => {
 
 const HealthpackagesDetail= (props)=>
 {
-    console.log(props.hpackage);
+    //console.log(props.hpackage);
     const {name,Focus,Available1,Available2,Price,key}= props.hpackage;
     return (
         <>
