@@ -1,0 +1,25 @@
+[
+    {
+      "key":"A102",
+      "slide":"slide-right",
+      "name": "PRIMIUM",
+      "image": "../../images/O101.jpg",
+      "price": "PER MONTH 20000"
+    },
+    {
+      "key": "A103",
+      "slide":"slide-left",
+      "name": "ECONOMY",
+      "image": "../../images/O103.jpg",
+      "price": " PER MONTH 14000"
+    },
+    {
+      "key": "A104",
+      "slide":"slide-right",
+      "name": "GOLDER",
+      "image": "../../images/O102.jpg",
+      "price": "PER MONTH 34500"
+     
+    }
+    
+  ]

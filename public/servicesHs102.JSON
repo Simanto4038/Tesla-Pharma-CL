@@ -1,0 +1,25 @@
+[
+    {
+      "key":"P102",
+      "slide":"slide-right",
+      "name": "BLOOD",
+      "image": "../../images/P101.jpg",
+      "price": "2500"
+    },
+    {
+      "key": "P103",
+      "slide":"slide-left",
+      "name": "URINE",
+      "image": "../../images/P103.jpg",
+      "price": "1400"
+    },
+    {
+      "key": "P104",
+      "slide":"slide-right",
+      "name": "STOOL",
+      "image": "../../images/P104.jpg",
+      "price": "1250"
+     
+    }
+    
+  ]

@@ -6,8 +6,9 @@ import { Card } from 'react-bootstrap';
 import './Banner.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { NavLink } from 'react-router-dom';
 AOS.init({
-  offset: 200,
+  offset: 150,
   duration: 700
 });
 
@@ -40,10 +41,11 @@ const MainService = () => {
 
 const Service = (props)=>
 {  
-  const {name,image,Test,Open,slide}= props.service;
+  const {name,image,Test,Open,slide,key}= props.service;
+
   return (
     <>
-   
+    <NavLink className='link'  to={`/home/services/${key}`}>
     <div className='serviceBox'data-aos={"fade-left"}  style={{height:'220px',backgroundImage:`url(${image})`,backgroundSize:'cover',overflow:'hidden'}}>
 
     
@@ -53,6 +55,7 @@ const Service = (props)=>
     </div>
     <p className="h5 text-primary">{Test}</p>
     <p className="h6 text-danger">***{Open}</p>
+    </NavLink>
     </>
   )
 }

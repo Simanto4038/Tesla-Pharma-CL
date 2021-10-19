@@ -1,0 +1,31 @@
+[
+    {
+      "key": "IS101",
+      "slide":"slide-left",
+      "name": "MRI",
+      "image": "../../images/D101.jpg" ,
+      "price": "15000"
+    },
+    {
+      "key":"IS102",
+      "slide":"slide-right",
+      "name": "ECG",
+      "image": "../../images/D102.jpg",
+      "price": "2500"
+    },
+    {
+      "key": "IS103",
+      "slide":"slide-left",
+      "name": "CT SCAN",
+      "image": "../../images/D103.jpg",
+      "price": "12500"
+    },
+    {
+      "key": "IS104",
+      "slide":"slide-right",
+      "name": "X-RAY",
+      "image": "../../images/D104.jpg",
+      "price": "750"
+     
+    }
+  ]

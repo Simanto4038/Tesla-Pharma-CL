@@ -1,0 +1,25 @@
+[
+    {
+      "key":"A102",
+      "slide":"slide-right",
+      "name": "INSIDE METRO CITY",
+      "image": "../../images/A101.jpg",
+      "price": "2500"
+    },
+    {
+      "key": "A103",
+      "slide":"slide-left",
+      "name": "INSIDE METRO CITY (ECONOMY)",
+      "image": "../../images/A103.jpg",
+      "price": "1400"
+    },
+    {
+      "key": "A104",
+      "slide":"slide-right",
+      "name": "OUTSIDE METRO CITY",
+      "image": "../../images/A102.jpg",
+      "price": "450(/hr)"
+     
+    }
+    
+  ]

@@ -1,0 +1,25 @@
+[
+    {
+      "key":"MD101",
+      "slide":"slide-right",
+      "name": "PRESCRIBED",
+      "image": "../../images/MD101.jpg",
+      "price": "VARIED"
+    },
+    {
+      "key": "MD102",
+      "slide":"slide-left",
+      "name": "NON-PRESCRIBED",
+      "image": "../../images/MD102.jpg",
+      "price": "VARIED"
+    },
+    {
+      "key": "MD103",
+      "slide":"slide-right",
+      "name": "SKIN-CARE",
+      "image": "../../images/MD103.jpg",
+      "price": "VARIED"
+     
+    }
+    
+  ]

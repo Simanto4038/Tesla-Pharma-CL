@@ -11,11 +11,15 @@ import Footer from './Components/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './Components/Login/Login';
 import Signup from './Components/Login/Signup';
+import MainservicesDetail from './Components/Main/MainservicesDetail';
+import AuthProvider from './Context/AuthProvider';
+import PrivetRoute from './Components/PrivetRoute/PrivetRoute';
+import ProfileDetail from './Components/ProfileDetail/ProfileDetail';
 
 function App() {
   return (
     <div className="App">
-   
+   <AuthProvider>
    <BrowserRouter>
       <Navigationbar/>
       <Switch>
@@ -28,6 +32,9 @@ function App() {
         <Route path='/about'>
           <About/>
         </Route>
+        <PrivetRoute path='/ProfileDetail'>
+          <ProfileDetail/>
+        </PrivetRoute>
         <Route path='/logIn'>
           <Login/>
         </Route>
@@ -36,6 +43,9 @@ function App() {
         </Route>
         <Route path='/services'>
           <Services/>
+        </Route>
+        <Route path="/home/services/:ImgID">
+           <MainservicesDetail/>
         </Route>
         <Route path="/home/healthPackage/:healthID">
            <HealthPackageDetail/>
@@ -48,7 +58,7 @@ function App() {
      
       <Footer/>
       </BrowserRouter>
-    
+      </AuthProvider>
     </div>
   );
 }
