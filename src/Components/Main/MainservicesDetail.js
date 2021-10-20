@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { NavLink } from 'react-router-dom';
 
 const MainservicesDetail = () => {
     const [services,setservicess]=useState([])
@@ -19,11 +18,11 @@ const MainservicesDetail = () => {
         <div className='container mx-auto row g-3 mt-3 pb-5 '>
         {  
             services.map( service => 
-                <>
-                <div className = "col-12 col-lg-6 col-md-12 ">
-                <Mainservices key={service.key} service={service}/>
+              
+                <div  key={service.key} className = "col-12 col-lg-6 col-md-12 ">
+                <Mainservices  service={service}/>
              </div>
-             </>
+             
                 )
         }
     </div>
@@ -33,8 +32,8 @@ const MainservicesDetail = () => {
 
 const Mainservices= (props)=>
 {
-    console.log(props.service);
-    const {name,price,image,key}= props.service;
+    //console.log(props.service);
+    const {name,price,image}= props.service;
     return (
         <>
         {/* <NavLink className='link'  to={`/home/healthPackage/${key}`}> */}

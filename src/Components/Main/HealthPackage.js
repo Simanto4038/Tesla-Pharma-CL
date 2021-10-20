@@ -17,7 +17,7 @@ const HealthPackage = () => {
         <div className='container mx-auto row g-3 mt-3 pb-5 '>
             {
                 packages.map( hpackage => 
-                    <div className = "col-12 col-lg-4 col-md-12 ">
+                    <div key={hpackage.key} className = "col-12 col-lg-4 col-md-12 ">
                     <Healthpackages key={hpackage.key} hpackage={hpackage}/>
                  </div>
                     )
@@ -29,7 +29,7 @@ const HealthPackage = () => {
 
 const Healthpackages= (props)=>
 {
-    console.log(props.hpackage);
+   // console.log(props.hpackage);
     const {name,image,Available,Price,key}= props.hpackage;
     return (
         <>

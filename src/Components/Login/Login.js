@@ -18,13 +18,14 @@ const Login = () => {
  
 const {user,
       GoogleSignInHandler,
+      EmailSignInHandler,
        error,
       SignoutHandler,
       setEmail,
       setError,
       setUser,
       setPassWord,
-      SigninWithEmail}=UseFirebase()
+      resetPasword}=UseFirebase()
 
 
   //console.log(user);
@@ -52,7 +53,7 @@ const {user,
     }).catch((error) => {
       // Handle Errors here.
       const errorCode = error.code;
-      const errorMessage = error.message;
+    
       
       setError(errorCode);
       // ...
@@ -71,13 +72,40 @@ const {user,
    setPassWord(e.target.value); 
  }
  
+  const HandleEmailLogIn =(e)=>
+  {
+    e.preventDefault();
+
+    EmailSignInHandler().then((result) => {
+  
+      const {displayName,email,photoURL} = result.user;
+      const loggedinUserInfo={
+        name:displayName,
+        email:email,
+        photo:photoURL
+      }
+  
+      setUser(loggedinUserInfo);
+      history.push(redirect_URL)
+    }).catch((error) => {
+      // Handle Errors here.
+      const errorCode = error.code;
+     
+      
+      setError(errorCode);
+      // ...
+    });
+
+  }
+
+
     return (
         <div className="mt-5 row">
             
             <div className='col-12 col-lg-4 col-md-6  mx-auto  text-start p-4  '>
             <h2>Sign In / Log In</h2>
 
-    <Form onSubmit={SigninWithEmail}>
+    <Form onSubmit={HandleEmailLogIn}>
     
            
     <Form.Group  controlId="formGridEmail">
@@ -94,7 +122,7 @@ const {user,
     
   Sign In
   </Button>
-  {/* <Button variant="link" onClick={"resetPasword"}>Forgate Your Password??</Button> */}
+  <Button variant="link" onClick={resetPasword}>Forgate Your Password??</Button>
   </Form>
    
  

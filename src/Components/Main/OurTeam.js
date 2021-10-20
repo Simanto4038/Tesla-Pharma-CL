@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
 
 const OurTeam = () => {
     const [members,setMenber]= useState([]);
@@ -9,14 +8,14 @@ const OurTeam = () => {
         const URL='./ourTeam.JSON'
         fetch(URL).then(res => res.json()).then(data => setMenber(data))
     },[])
-    console.log(members);
+    //console.log(members);
     return (
         <div>
             <h1 className='text-center'style={{color:"rgb(123, 11, 125)"}}>Our Management Team</h1>
             <div className='container mx-auto row g-3 mt-3 pb-5 '>
             {
                 members.map( member => 
-                    <div className = "col-12 col-lg-4 col-md-12 ">
+                    <div key={member.key} className = "col-12 col-lg-4 col-md-12 ">
                     <Members key={member.key} member={member}/>
                  </div>
                     )
@@ -28,8 +27,8 @@ const OurTeam = () => {
 
 const Members= (props)=>
 {
-    console.log(props.member);
-    const {name,image,post,Age,key}= props.member;
+   // console.log(props.member);
+    const {name,image,post,Age}= props.member;
     return (
         <>
        

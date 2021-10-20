@@ -13,14 +13,14 @@ const TopClints = () => {
         const URL='./Claint.JSON'
         fetch(URL).then(res => res.json()).then(data => setClaints(data))
     },[])
-    console.log(claints);
+    //console.log(claints);
     return (
         <div>
             <h1 className='text-center'style={{color:"rgb(123, 11, 125)"}}>Our Corporate Clients</h1>
             <div className='container mx-auto row g-3 mt-3 pb-5 '>
             {
                 claints.map( client => 
-                    <div data-aos="fade-in" className = "col-6 col-lg-3 col-md-6 ">
+                    <div key={client.key} data-aos="fade-in" className = "col-6 col-lg-3 col-md-6 ">
                     <Clients key={client.key} client={client}/>
                  </div>
                     )
@@ -32,7 +32,7 @@ const TopClints = () => {
 
 const Clients= (props)=>
 {
-    console.log(props.client);
+    //console.log(props.client);
     const {image}= props.client;
     return (
         <>

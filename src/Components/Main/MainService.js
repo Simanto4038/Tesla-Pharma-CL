@@ -1,8 +1,8 @@
-import Button from '@restart/ui/esm/Button';
+
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { Card } from 'react-bootstrap';
+
 import './Banner.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -28,7 +28,7 @@ const MainService = () => {
         <div className='container mx-auto row g-3 mt-3 '>
                {
                  services.map(service => 
-                  <div className = "col-12 col-lg-6 col-md-6 ">
+                  <div key={service.key} className = "col-12 col-lg-6 col-md-6 ">
                      <Service key={service.key} service={service} />
                   </div>
                   
@@ -41,7 +41,7 @@ const MainService = () => {
 
 const Service = (props)=>
 {  
-  const {name,image,Test,Open,slide,key}= props.service;
+  const {name,image,Test,Open,key}= props.service;
 
   return (
     <>

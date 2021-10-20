@@ -30,7 +30,7 @@ const HealthPackageDetail = () => {
         <div className='container mx-auto row g-3 mt-3 pb-5 '>
         {  
             helthPackages.map( hpackage => 
-                <div className = "col-12 col-lg-4 col-md-12 ">
+                <div key={hpackage.key} className = "col-12 col-lg-4 col-md-12 ">
                 <HealthpackagesDetail key={hpackage.key} hpackage={hpackage}/>
              </div>
                 )

@@ -1,0 +1,25 @@
+[
+    {
+      "key":"CO102",
+      "slide":"slide-right",
+      "name": "ICU SUPPORT",
+      "image": "../../images/CO103.jpg",
+      "price": "PER MONTH 20000"
+    },
+    {
+      "key": "CO103",
+      "slide":"slide-left",
+      "name": "TEST",
+      "image": "../../images/CO101.jpg",
+      "price": "2500"
+    },
+    {
+      "key": "CO104",
+      "slide":"slide-right",
+      "name": "OXYGEN & MEDICINE",
+      "image": "../../images/CO102.jpg",
+      "price": "PACKAGE STARTS FROM 12500"
+     
+    }
+    
+  ]
